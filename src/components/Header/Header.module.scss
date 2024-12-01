@@ -1,0 +1,29 @@
+@use '@styles/_colors.scss' as colors;
+@use '@styles/_constants.scss' as constants;
+
+.header {
+    
+    .navigate {
+
+        .navigate__container {            
+            margin: 0 auto;
+            max-width: constants.$breakpoint-lg;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .navigate__item {
+                line-height: 1.5;
+                padding: 0.5rem 1rem;
+                color: colors.$primary-color__white-gray;
+
+                &:hover {
+                    background-color: colors.$primary-color__pink;
+                    color: colors.$dark;
+                }
+            }
+
+        }
+    }
+}

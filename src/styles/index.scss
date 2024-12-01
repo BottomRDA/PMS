@@ -1,0 +1,21 @@
+@use '_reset';
+@use '_colors';
+@use '_constants';
+@use '_fonts';
+@use '_typography';
+
+body {
+    background: colors.$primary-color__gray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+    color: colors.$primary-color__white-gray;
+
+    main {
+        flex: 1;
+        max-width: constants.$breakpoint-lg;
+        margin: 0 auto;
+    }
+}

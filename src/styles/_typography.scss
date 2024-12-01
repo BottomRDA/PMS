@@ -1,0 +1,55 @@
+@use '_colors';
+
+// Основные параметры шрифтов
+$font-primary: 'Roboto', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Размеры шрифтов
+$font-size-small: 0.875rem; // 14px
+$font-size-base: 1rem;      // 16px
+$font-size-large: 1.25rem;  // 20px
+$font-size-h1: 2.5rem;      // 40px
+$font-size-h2: 2rem;        // 32px
+$font-size-h3: 1.75rem;     // 28px
+$font-size-h4: 1.5rem;      // 24px
+
+// Межстрочные расстояния
+$line-height-small: 1.2;
+$line-height-base: 1.5;
+$line-height-large: 1.8;
+
+// Цвет текста
+$text-color-primary: colors.$primary-color__white-gray;
+
+// Глобальные стили текста
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color-primary;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-bold;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-medium;
+}
+
+h3, h4 {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-regular;
+}
+
+p {
+    font-size: $font-size-base;
+    line-height: $line-height-large;
+}
